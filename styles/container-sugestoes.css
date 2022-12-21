@@ -1,0 +1,83 @@
+.container-sugestoes {
+    width: 100%;
+}
+
+.texto-indicacao{
+    color: var(--white);
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 2em;
+
+}
+.filmes{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    gap: 3em;
+    margin-bottom: 3em;
+
+}
+
+.poster{
+    text-align: center;
+    cursor:pointer;
+}
+
+.poster img {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 15px;
+
+    border: 4px solid transparent;
+
+    transition: .3s;
+    cursor: pointer;
+}
+
+.poster img.seleciona {
+    border: 4px solid var(--soft-red);
+}
+
+.poster figcaption {
+    color: var(--white);
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.info-container {
+    display: none;
+
+}
+
+.info-container.active {
+    display: block;
+    visibility: visible;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 1.2em 1em;
+    border: 1px solid var(--soft-red);
+    border-radius: 10px;
+    
+}
+
+.info-container.active p:not(p:last-child) {
+    margin-bottom: 15px;
+}
+
+.volta {
+    width: 35%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--soft-red);
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-bottom: 1px solid var(--soft-red);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PobreFlix</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>PobreFlix</h1>
+    </header>
+
+    <section class="container">
+        <form>
+            <label for="name"> Nome: </label>
+            <input type="text" placeholder="Informe Seu Nome" aria-label="nome"  required id="name" class="input-name"> 
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" class="input-age" placeholder="Informe Sua Idade" aria-label="idade" required>
+
+            <fieldset class="select-genre">
+                <legend>Categoria de Filme: </legend>
+
+                <div class="movie-genre">
+                    <input type="radio" value="terrorTrash" id="terrorTrash" name="genre" checked>
+                    <label class="genre" for="terrorTrash">Terror Trash</label>
+                </div>
+
+                <div class="movie-genre">
+                    <input type="radio" value="bodyHorror" id="bodyHorror" name="genre">
+                    <label class="genre" for="bodyHorror">Body Horror</label>
+                </div>
+
+                <div class="movie-genre">
+                    <input type="radio" value="terrorJapones" id="terrorJapones" name="genre">
+                    <label class="genre" for="terrorJapones">Terror Japonês</label>
+                </div>
+
+                <div class="movie-genre">
+                    <input type="radio" value="thriller" id="thriller" name="genre">
+                    <label class="genre" for="thriller">Terror Psicológico</label>
+                </div>
+                
+                <div class="movie-genre">
+                    <input type="radio" value="revenge" id="revenge" name="genre">
+                    <label class="genre" for="revenge">Vingança</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-search">Pesquisar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Desenvolvimento Web II - IFPB Campus Sousa. Desenvolvido por José Victor e Viviane Araujo.</p>
+    </footer>
+
+    <script src="./js/containerSugestoes.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
